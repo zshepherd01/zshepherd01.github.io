@@ -24,6 +24,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 4em;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -39,6 +43,10 @@ h3 {
     margin-top: 5px;
 }
 
+.long-text {
+    text-align: justify;
+}
+
 p>a {
     color: var(--accent-1);
     text-decoration: none;
@@ -50,7 +58,7 @@ p>a:hover {
 
 #navbar {
     width: 100vw;
-    /* background-color: var(--accent-1); */
+    background-color: var(--bg-color);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -104,13 +112,17 @@ p>a:hover {
 .imgcontactpanel {
     width: 50%;
     padding: 5px;
+    text-align: center;
 }
 
 .imgcontactpanel img {
+    display: inline-block;
     width: 100%;
+    max-width: 217px;
 }
 
 .imgcontactpanel p {
+    width: 100%;
     text-align: center;
 }
 
@@ -151,4 +163,42 @@ p>a:hover {
     color: var(--grey);
     text-align: center;
     margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+    html {
+        scroll-padding-top: 7em;
+    }
+
+    #navbar {
+        display: block;
+        text-align: center;
+    }
+
+    #navbar ul {
+        justify-content: center;
+    }
+
+    .container {
+        width: initial;
+        margin: 10px;
+    }
+
+    #top {
+        display: initial;
+    }
+
+    .imgcontactpanel {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imgcontactpanel img {
+        display: inline-block;
+    }
+
+    .imgcontactpanel p {
+        width: 100%;
+        text-align: center;
+    }
 }
