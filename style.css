@@ -1,0 +1,154 @@
+:root {
+    --bg-color: #F2F4F3;
+    --text-color: #211A1D;
+    --grey: #6A7B76;
+    --accent-1: #E5446D;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #F2F4F3;
+        --bg-color: #211A1D;
+    }
+}
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: x-large;
+    margin-top: 5px;
+}
+
+p>a {
+    color: var(--accent-1);
+    text-decoration: none;
+}
+
+p>a:hover {
+    text-decoration: underline;
+}
+
+#navbar {
+    width: 100vw;
+    /* background-color: var(--accent-1); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+#navbar h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#navbar ul {
+    font-size: x-large;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: var(--accent-1);
+}
+
+#navbar li {
+    /* display: inline-block; */
+    margin: 5px 0;
+    padding: 0 10px;
+    border-right: 1px solid var(--text-color);
+}
+
+#navbar li:last-child {
+    border-right: none;
+}
+
+.container {
+    width: 80vw;
+    margin: 10px 10vw;
+}
+
+#top {
+    display: flex;
+}
+
+.imgcontactpanel {
+    width: 50%;
+    padding: 5px;
+}
+
+.imgcontactpanel img {
+    width: 100%;
+}
+
+.imgcontactpanel p {
+    text-align: center;
+}
+
+.biopanel {
+    padding: 5px;
+}
+
+.project-header *:not(.the-header) {
+    font-weight: normal;
+    font-size: medium;
+}
+
+.inline-padder {
+    display: inline-block;
+    width: 0.5em;
+}
+
+.boxed-link {
+    display: inline-block;
+    padding: 3px 6px;
+    color: var(--accent-1);
+    text-decoration: none;
+    font-variant-caps: small-caps;
+    height: 100%;
+}
+
+.boxed-link:hover {
+    padding: 2px 5px;
+    border: 1px solid var(--accent-1);
+    border-radius: 10px;
+}
+
+#activities ul {
+    padding-left: 2em;
+}
+
+#footer {
+    color: var(--grey);
+    text-align: center;
+    margin: 20px 0;
+}
