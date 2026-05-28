@@ -169,13 +169,21 @@ p>a:hover, li>a:hover {
 }
 
 #activities ul {
-    padding-left: 2em;
+    padding: 0 2em;
 }
 
 #footer {
     color: var(--grey);
     text-align: center;
     margin: 20px 0;
+}
+
+/* readmore only on mobile. Desktop users can just scroll */
+input.read-more-state {
+    display: none;
+}
+input.read-more-trigger {
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -193,12 +201,12 @@ p>a:hover, li>a:hover {
     }
 
     .container {
-        width: initial;
-        margin: 10px;
+        width: 90vw;
+        margin: 5vw;
     }
 
     #top {
-        display: initial;
+        display: block;
     }
 
     .imgcontactpanel {
@@ -213,5 +221,32 @@ p>a:hover, li>a:hover {
     .imgcontactpanel p {
         width: 100%;
         text-align: center;
+    }
+
+    /* readmore is from https://stackoverflow.com/a/31969312 */
+    input.read-more-state:not(:checked) ~ div.read-more-wrap {
+        max-height: 5em;
+        overflow: hidden;
+    }
+
+    input.read-more-state:checked ~ div.read-more-wrap {
+        max-height: initial;
+    }
+
+    input.read-more-state:not(:checked) ~ label.read-more-trigger:before {
+        content: "▽";
+    }
+
+    input.read-more-state:checked ~ label.read-more-trigger:before {
+        content: "△";
+    }
+
+    label.read-more-trigger {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: larger;
+        color: var(--accent-1);
     }
 }

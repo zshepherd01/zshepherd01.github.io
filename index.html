@@ -41,8 +41,12 @@
             <a href="files/poster-nsync.pdf" class="boxed-link poster">Poster</a>
             <a href="https://synt2026.github.io/" class="boxed-link submitted">Submitted: SYNT 2026</a>
         </h3>
-        <p class="long-text">Inductive program synthesis algorithms search a space of programs to find one that meets some specification. Enumerating according to the syntax of a programming language leads to a large search space, and hence slow synthesis, due in large part to <i>semantic duplication</i>. A synthesiser may have to evaluate—and reject—multiple semantically identical but syntactically different programs, wasting resources.</p>
-        <p class="long-text">To avoid this duplication, we present NSynC, a synthesis-by-semantics approach. By enumerating the semantics of the target language directly, we guarantee that each candidate program is semantically unique and that each evaluation of a candidate is meaningful. Specifically, we search the space of normal forms for the simply-typed lambda calculus with sums using a top-down, type-directed synthesis algorithm. Our preliminary results show a geomean speedup of 8.93x on a synthetic benchmark suite over the unrestricted algorithm.</p>
+        <input class="read-more-state" id="read-more-nsync" type="checkbox" />
+        <div class="read-more-wrap">
+            <p class="long-text">Inductive program synthesis algorithms search a space of programs to find one that meets some specification. Enumerating according to the syntax of a programming language leads to a large search space, and hence slow synthesis, due in large part to <i>semantic duplication</i>. A synthesiser may have to evaluate—and reject—multiple semantically identical but syntactically different programs, wasting resources.</p>
+            <p class="long-text">To avoid this duplication, we present NSynC, a synthesis-by-semantics approach. By enumerating the semantics of the target language directly, we guarantee that each candidate program is semantically unique and that each evaluation of a candidate is meaningful. Specifically, we search the space of normal forms for the simply-typed lambda calculus with sums using a top-down, type-directed synthesis algorithm. Our preliminary results show a geomean speedup of 8.93x on a synthetic benchmark suite over the unrestricted algorithm.</p>
+        </div>
+        <label class="read-more-trigger" for="read-more-nsync"></label>
     </div>
 
     <!-- <div class="container" id="blog">
