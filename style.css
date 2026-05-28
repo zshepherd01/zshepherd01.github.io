@@ -1,14 +1,14 @@
 :root {
-    --bg-color: #F2F4F3;
-    --text-color: #211A1D;
-    --grey: #6A7B76;
-    --accent-1: #E5446D;
+    --bg-color: #fdfdfe;
+    --text-color: #070d0d;
+    --grey: #929591;
+    --accent-1: #ed0dd9; /* fuschia */
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-color: #F2F4F3;
-        --bg-color: #211A1D;
+        --text-color: #fdfdfe;
+        --bg-color: #070d0d;
     }
 }
 
@@ -47,12 +47,17 @@ h3 {
     text-align: justify;
 }
 
-p>a {
+p.long-text+p.long-text {
+    /* text-indent: 1em; */
+    margin-top: 0.5em;
+}
+
+p>a, li>a {
     color: var(--accent-1);
     text-decoration: none;
 }
 
-p>a:hover {
+p>a:hover, li>a:hover {
     text-decoration: underline;
 }
 
@@ -153,6 +158,14 @@ p>a:hover {
     padding: 2px 5px;
     border: 1px solid var(--accent-1);
     border-radius: 10px;
+}
+
+.submitted {
+    color: var(--grey);
+}
+
+.submitted:hover {
+    border-color: var(--grey);
 }
 
 #activities ul {
