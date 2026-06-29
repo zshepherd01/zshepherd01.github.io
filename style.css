@@ -168,7 +168,7 @@ p>a:hover, li>a:hover {
     border-color: var(--grey);
 }
 
-#activities ul {
+.container ul {
     padding: 0 2em;
 }
 
