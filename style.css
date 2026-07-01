@@ -3,6 +3,9 @@
     --text-color: #070d0d;
     --grey: #929591;
     --accent-1: #ed0dd9; /* fuschia */
+    --red: #e50000; /* red */
+    --green: #02ab2e; /* kelly green */
+    --blue: #1d5dec; /* azul */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -149,6 +152,7 @@ p>a:hover, li>a:hover {
     display: inline-block;
     padding: 3px 6px;
     color: var(--accent-1);
+    border-color: var(--accent-1);
     text-decoration: none;
     font-variant-caps: small-caps;
     height: 100%;
@@ -156,16 +160,29 @@ p>a:hover, li>a:hover {
 
 .boxed-link:hover {
     padding: 2px 5px;
-    border: 1px solid var(--accent-1);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 10px;
 }
 
-.submitted {
-    color: var(--grey);
+.pending {
+    color: var(--grey) !important;
+    border-color: var(--grey) !important;
 }
 
-.submitted:hover {
-    border-color: var(--grey);
+.arxiv {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.conference {
+    color: var(--green);
+    border-color: var(--green);
+}
+
+.workshop {
+    color: var(--blue);
+    border-color: var(--blue);
 }
 
 .container ul {
