@@ -34,7 +34,7 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Noto Sans', 'DejaVu Serif', sans-serif;
 }
 
 h2 {
@@ -127,6 +127,7 @@ p>a:hover, li>a:hover {
     display: inline-block;
     width: 100%;
     max-width: 217px;
+    background-color: #fdfdfe;
 }
 
 .imgcontactpanel p {
