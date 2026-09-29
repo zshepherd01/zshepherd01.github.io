@@ -50,6 +50,10 @@ h3 {
     text-align: justify;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
 p.long-text+p.long-text {
     /* text-indent: 1em; */
     margin-top: 0.5em;
